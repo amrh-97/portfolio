@@ -25,7 +25,7 @@
         min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
         background: #fff;
         display: flex;
-        justify-content: space-between;
+        gap: 30px;
         flex-direction: column;
         animation: NavAnimation 0.3s ease;
     }
