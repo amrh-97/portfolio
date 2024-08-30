@@ -22,7 +22,7 @@
         top: 0;
         left: 0;
         width: 80%;
-        min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+        min-height: 100dvh;
         background: #fff;
         display: flex;
         gap: 60px;
