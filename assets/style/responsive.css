@@ -25,13 +25,13 @@
         min-height: calc(100vh - env(safe-area-inset-top) - env(safe-area-inset-bottom));
         background: #fff;
         display: flex;
-        gap: 30px;
+        gap: 60px;
         flex-direction: column;
         animation: NavAnimation 0.3s ease;
     }
 
     #main__nav .nav__links li a {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     #main__nav .nav__links {
@@ -44,9 +44,7 @@
     }
 
     .nav__socialicon li a i {
-        font-size: 16px;
-        width: 40px;
-        height: 40px;
+        color: var(--amr--color--2);
     }
 
     #main__nav .cross__icon {
