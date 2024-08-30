@@ -12,9 +12,14 @@
     }
 
     #main__nav {
-        display: flex;
+        min-height: 50vh;
+        /* display: flex; */
         flex-direction: column;
         align-items: center;
+    }
+
+    .resnav__end {
+        min-height: 50vh;
     }
 
     .res__nav {
@@ -22,9 +27,9 @@
         top: 0;
         left: 0;
         width: 80%;
-        min-height: 100%;
+        min-height: 100vh;
         background: #fff;
-        display: flex;
+        /* display: flex; */
         gap: 60px;
         justify-content: space-between;
         flex-direction: column;
