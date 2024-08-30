@@ -26,6 +26,7 @@
         background: #fff;
         display: flex;
         gap: 60px;
+        justify-content: space-between;
         flex-direction: column;
         animation: NavAnimation 0.3s ease;
     }
