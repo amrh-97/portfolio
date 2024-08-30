@@ -194,6 +194,10 @@ body {
     display: none;
 }
 
+.res__nav .footer__desc {
+    display: none;
+}
+
 .menu__logo i {
     display: none;
 }
