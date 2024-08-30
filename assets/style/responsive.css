@@ -41,6 +41,10 @@
         animation: NavAnimation 0.3s ease;
     }
 
+    .res__nav .footer__desc {
+    display: none;
+    }
+
     #main__nav .nav__links li a {
         font-size: 18px;
     }
