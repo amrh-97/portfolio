@@ -42,6 +42,7 @@ function navliHide() {
 }
 menuShowBtn.addEventListener('click', navShow);
 menuHideBtn.addEventListener('click', navHide);
+resNav.addEventListener('click', navHide);
 
 
 // Text Wrapper
