@@ -298,6 +298,10 @@
         align-items: start;
     }
 
+    .check__wrapper ul li::before {
+        left: -15px;
+    }
+
     .intro__txt h1 {
         font-size: 32px;
     }
@@ -344,6 +348,14 @@
         justify-content: space-between;
     }
 
+    .sec7__form {
+        min-height: 660px;
+    }
+
+    .fname__div {
+        grid-template-columns: 1fr;
+    }
+
     #sec__1 {
         min-height: 920px;
     }
@@ -357,7 +369,7 @@
     }
 
     #sec__7 {
-        min-height: 1580px;
+        min-height: 1640px;
     }
 }
 
