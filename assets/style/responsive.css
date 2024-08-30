@@ -356,6 +356,11 @@
         grid-template-columns: 1fr;
     }
 
+    .fname__div div {
+        display: grid;
+        gap: 10px;
+    }
+
     #sec__1 {
         min-height: 920px;
     }
