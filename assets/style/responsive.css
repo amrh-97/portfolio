@@ -42,7 +42,7 @@
     }
 
     .res__nav .footer__desc {
-    display: none;
+    display: block;
     }
 
     #main__nav .nav__links li a {
