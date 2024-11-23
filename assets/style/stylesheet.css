@@ -222,7 +222,7 @@ body {
 }
 
 .sec1__content {
-    height: 690px;
+    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -401,7 +401,6 @@ body {
 
 #features {
     position: relative;
-    min-height: 1350px;
 }
 
 #features::before,
@@ -427,7 +426,6 @@ body {
 .sec5__txt,
 .sec6__txt,
 .sec7__txt {
-    min-height: 160px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -524,7 +522,6 @@ body {
 
 #portfolio {
     position: relative;
-    min-height: 950px;
 }
 
 .sec3__txt,
@@ -928,9 +925,7 @@ body {
 
 /* -- Section-5 -- */
 
-#projects {
-    min-height: 660px;
-}
+
 
 /* .sec5__content {
     min-height: 700px;
@@ -974,6 +969,7 @@ body {
 .client__boxes {
     width: 75%;
     display: grid;
+    align-content: center;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--amr--global--gap);
 }
@@ -1035,7 +1031,6 @@ body {
 
 .testmonial__container {
     width: 100%;
-    min-height: 550px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1176,7 +1171,6 @@ body {
 
 #events {
     position: relative;
-    height: 920px;
 }
 
 .sec6__content {
@@ -1444,7 +1438,6 @@ body {
 
 #contact {
     position: relative;
-    min-height: 910px;
 }
 
 .sec7__boxes {
@@ -1603,7 +1596,6 @@ body {
 /* -- Random -- */
 
 .__seperator {
-    min-height: 50px;
     display: flex;
     justify-content: center;
     align-items: end;
@@ -1675,4 +1667,20 @@ body {
 
 .feature__boxes .fbox__content:nth-child(9) h4::after {
     content: "Development";
+}
+
+
+/*  */
+section {
+    padding: 60px 0;
+}
+
+.sec2__content,
+.sec3__content,
+.sec4__sec,
+.sec5__content,
+.sec6__content,
+.sec7__content {
+    display: grid;
+    gap: 30px;
 }
