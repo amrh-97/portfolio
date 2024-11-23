@@ -1,0 +1,494 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    /* background-color: yellowgreen; */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--amr--color--2);
+    height: 100px;
+}
+
+::-webkit-url-bar {
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    -webkit-appearance: searchfield;
+    -webkit-text-fill-color: red;
+}
+
+/* -- Variables -- */
+
+:root {
+
+    /* font-family */
+    --amr--fontfamily--1: "Montserrat", sans-serif;
+    --amr--fontfamily--2: "Poppins", sans-serif;
+
+    /* colors */
+    --amr--color--1: #ECF0F3;
+    --amr--color--2: #ff014f;
+    --amr--color--3: #3c3e41;
+    --amr--color--4: #1e2125;
+    --amr--color--5: linear-gradient(145deg, #ff014f, #d11414);
+    --amr--color--6: linear-gradient(145deg, #e2e8ec, #ffffff);
+    --amr--color--7: #dce1e4;
+
+    /* box shadow */
+    --amr--boxshadow--1: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+
+    /* font-weight */
+    --amr--fontweight--1: 700;
+    --amr--fontweight--2: 600;
+    --amr--fontweight--3: 500;
+    --amr--fontweight--4: 400;
+
+    /* border radius */
+    --amr--borderradius-1: 6px;
+    --amr--borderradius-2: 12px;
+
+    /* gap */
+    --amr--global--gap: 20px;
+
+    /* trasnition */
+    --amr--transition-1: 0.4s;
+}
+
+body {
+    background-color: var(--amr--color--1);
+    /* overflow-y: hidden; */
+}
+
+/* -- Global Tags -- */
+
+.red__highlight {
+    color: var(--amr--color--2);
+}
+
+/* Blog Header */
+
+#blog__header {
+    font-family: var(--amr--fontfamily--1);
+    position: sticky;
+    top: 0;
+    background: var(--amr--color--1);
+    z-index: 222;
+    box-shadow: #00000061 1px -15px 20px 0px;
+}
+
+.blog__logo a img {
+    max-width: 60px;
+}
+
+.bheader__inner {
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog__logo a {
+    color: var(--amr--color--4);
+    font-size: 26px;
+    font-weight: var(--amr--fontweight--2);
+}
+
+.blog__btn span a {
+    color: var(--amr--color--2);
+    font-family: var(--amr--fontfamily--2);
+    font-size: 13px;
+    background-image: var(--amr--color--6);
+    width: 140px;
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--amr--fontweight--3);
+    box-shadow: var(--amr--boxshadow--1);
+    border-radius: var(--amr--borderradius-1);
+    text-transform: uppercase;
+    position: relative;
+    cursor: pointer;
+    transition: var(--amr--transition-1);
+}
+
+.buynow__btn a:hover {
+    color: var(--amr--color--1);
+    background-image: var(--amr--color--5);
+    transform: translateY(-3px);
+}
+
+/* Blog Section-1 */
+.bsec1__content {
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.bsec1__inner {
+    background: var(--amr--color--6);
+    border-radius: var(--amr--borderradius-2);
+    box-shadow: var(--amr--boxshadow--1);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bsec1__txt {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog__img img {
+    display: block;
+    width: 100%;
+    border-radius: var(--amr--borderradius-2);
+}
+
+.blog__info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.blog__title h1 {
+    color: var(--amr--color--2);
+    font-family: var(--amr--fontfamily--1);
+    font-size: 40px;
+}
+
+.blog__info h2 {
+    color: var(--amr--color--2);
+    font-family: var(--amr--fontfamily--2);
+    font-size: 30px;
+}
+
+.blog__info article {
+    font-family: var(--amr--fontfamily--2);
+    font-size: 18px;
+}
+
+/* -- Footer -- */
+
+#main__footer {
+    position: relative;
+}
+
+.footer__content {
+    min-height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__logo img,
+.resnav__img img {
+    display: block;
+    width: 70px;
+    background: var(--amr--color--6);
+    border: 4px solid var(--amr--color--7);
+    border-radius: 50%;
+}
+
+.footer__logo p {
+    text-transform: uppercase;
+    font-weight: var(--amr--fontweight--2);
+    text-align: center;
+}
+
+.footer__logo p,
+.footer__desc p {
+    color: var(--amr--color--4);
+    font-size: 18px;
+    font-family: var(--amr--fontfamily--2);
+}
+
+#main__footer::before {
+    content: '';
+    width: 94%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top: 1px solid var(--amr--color--7);
+}
+
+/* ================================ */
+
+/* DIFFERENT PAGES */
+.bcontetn__2 {
+    height: 160vh;
+}
+
+.binner__2 {
+    height: 140vh;
+}
+
+
+.bcontetn__3 {
+    height: 150vh;
+}
+
+.binner__3 {
+    height: 130vh;
+}
+
+.bcontetn__4 {
+    height: 333vh;
+}
+
+.binner__4 {
+    height: 313vh;
+}
+
+.bimg__4,
+.bimg__5,
+.bimg__6 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bcontetn__5 {
+    height: 277vh;
+}
+
+.binner__5 {
+    height: 257vh;
+}
+
+.bcontetn__6 {
+    height: 196vh;
+}
+
+.binner__6 {
+    height: 176vh;
+}
+
+
+/* =============================================== */
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    .bsec1__content {
+        height: 110vh;
+    }
+
+    .bsec1__inner {
+        height: 90vh;
+    }
+
+    .bcontetn__2 {
+        height: 155vh;
+    }
+
+    .binner__2 {
+        height: 135vh;
+    }
+
+    .bcontetn__3 {
+        height: 135vh;
+    }
+
+    .binner__3 {
+        height: 113vh;
+    }
+
+    .bcontetn__4 {
+        height: 284vh;
+    }
+
+    .binner__4 {
+        height: 264vh;
+    }
+
+    .bcontetn__5 {
+        height: 233vh;
+    }
+
+    .binner__5 {
+        height: 213vh;
+    }
+
+    .bcontetn__6 {
+        height: 174vh;
+    }
+
+    .binner__6 {
+        height: 154vh;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+
+    .bcontetn__6 {
+        height: 164vh;
+    }
+
+    .binner__6 {
+        height: 144vh;
+    }
+
+    .bcontetn__5 {
+        height: 203vh;
+    }
+
+    .binner__5 {
+        height: 183vh;
+    }
+
+    .bcontetn__4 {
+        height: 254vh;
+    }
+
+    .binner__4 {
+        height: 234vh;
+    }
+}
+
+
+
+
+@media (max-width: 575px) {
+    .blog__logo a {
+        font-size: 18px;
+    }
+
+    .blog__btn span a {
+        width: 100px;
+        min-height: 40px;
+        font-size: 10px;
+    }
+
+    .bsec1__inner {
+        height: 85vh;
+    }
+
+    .bsec1__content {
+        height: 100vh;
+    }
+
+    .blog__title h1 {
+        font-size: 22px;
+    }
+
+    .blog__info h2 {
+        font-size: 18px;
+    }
+
+    .blog__info article p {
+        font-size: 14px;
+    }
+
+    .footer__logo p,
+    .footer__desc p {
+        font-size: 14px;
+    }
+
+    .footer__content {
+        min-height: 200px;
+    }
+
+
+
+    /* DIFFERENT PAGES */
+
+    .bcontetn__2 {
+        height: 140vh;
+    }
+
+    .binner__2 {
+        height: 125vh;
+    }
+
+    .bcontetn__3 {
+        height: 115vh;
+    }
+
+    .binner__3 {
+        height: 100vh;
+    }
+
+    .bcontetn__4 {
+        height: 218vh;
+    }
+
+    .binner__4 {
+        height: 202vh;
+    }
+
+    .bimg__4,
+    .bimg__5,
+    .bimg__6 {
+        gap: 10px;
+    }
+
+    .bcontetn__5 {
+        height: 161vh;
+    }
+
+    .binner__5 {
+        height: 146vh;
+    }
+
+    .bcontetn__6 {
+        height: 122vh;
+    }
+
+    .binner__6 {
+        height: 107vh;
+    }
+}
+
+@media (max-width: 425px) {
+    .blog__info article {
+        font-size: 16px;
+    }
+
+    .bcontetn__4 {
+        height: 198vh;
+    }
+
+    .binner__4 {
+        height: 182vh;
+    }
+
+    .bcontetn__5 {
+        height: 148vh;
+    }
+
+    .binner__5 {
+        height: 130vh;
+    }
+
+    /* .bcontetn__2 {
+        height: 140vh;
+    }
+
+    .binner__2 {
+        height: 125vh;
+    } */
+}

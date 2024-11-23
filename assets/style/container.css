@@ -1,0 +1,42 @@
+/* || Container--Breakpoints */
+
+.container_div {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+@media (min-width: 320px) {
+    .container_div {
+        max-width: 310px;
+    }
+}
+
+@media (min-width: 425px) {
+    .container_div {
+        max-width: 370px;
+    }
+}
+
+@media (min-width: 576px) {
+    .container_div {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container_div {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container_div {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container_div {
+        max-width: 1140px;
+    }
+}
