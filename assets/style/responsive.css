@@ -149,7 +149,8 @@
     }
 
     .feature__boxes,
-    .web__boxese {
+    .web__boxese,
+    .blog__boxes {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -276,7 +277,8 @@
 @media (max-width: 768px) {
 
     .feature__boxes,
-    .web__boxese {
+    .web__boxese,
+    .blog__boxes {
         grid-template-columns: 1fr;
     }
 
