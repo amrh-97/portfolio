@@ -298,7 +298,8 @@ body {
 }
 
 .social__info ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: var(--amr--global--gap);
 }
 
@@ -1686,10 +1687,9 @@ body {
     position: absolute;
     top: -30px;
     right: 0;
-    width: 120px;
-    height: 24px;
     display: grid;
     place-items: center;
+    padding: 4px 10px;
     border-radius: var(--amr--borderradius-2);
 }
 
@@ -1717,7 +1717,7 @@ body {
 }
 
 .feature__boxes .fbox__content:nth-child(7) h4::after {
-    content: "Off/On Page";
+    content: "On/Off & Technical SEO";
 }
 
 .feature__boxes .fbox__content:nth-child(8) h4::after {
