@@ -686,15 +686,12 @@ body {
 
 .resume__txt {
     min-height: 360px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background: var(--amr--color--6);
     box-shadow: var(--amr--boxshadow--1);
     border-radius: var(--amr--borderradius-2);
     position: relative;
     z-index: 1;
+    padding: 20px 30px;
 }
 
 .resume__txt::before {
@@ -724,7 +721,6 @@ body {
 }
 
 .resmune__inner {
-    width: 85%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -734,9 +730,9 @@ body {
 .resmune__inner::before {
     content: '';
     position: absolute;
-    top: 0;
-    right: 109%;
-    width: 18px;
+    top: 12%;
+    right: 106.7%;
+    width: 20px;
     height: 5px;
     background-color: var(--amr--color--7);
 }
@@ -744,8 +740,8 @@ body {
 .resmune__inner::after {
     content: '';
     position: absolute;
-    top: -7px;
-    right: 113%;
+    top: 9%;
+    right: 111%;
     width: 10px;
     height: 10px;
     background-color: var(--amr--color--1);
@@ -766,6 +762,11 @@ body {
     border-bottom: solid 1px var(--amr--color--7);
 }
 
+.resume__heading h4 {
+    color: var(--amr--color--2);
+    font-weight: var(--amr--fontweight--2);
+}
+
 .resume__heading span {
     font-size: 14px;
     color: var(--amr--color--4);
@@ -783,6 +784,10 @@ body {
     animation: fadeOut 0.3s linear;
 }
 
+.resume__descrp .personal__project-description {
+    font-size: 15px;
+}
+
 
 @keyframes fadeOut {
     0% {
@@ -794,14 +799,7 @@ body {
     }
 }
 
-.sec4__sec>.__resume:nth-of-type(3) .resume__boxes {
-    border: none;
-    flex-direction: column;
-    justify-content: start;
-    gap: 30px;
-}
-
-.progrss__chart {
+/* .progrss__chart {
     width: 90%;
     display: flex;
     flex-direction: column;
@@ -831,7 +829,6 @@ body {
     color: var(--amr--color--4);
     font-size: 14px;
     font-family: var(--amr--fontfamily--2);
-    /* font-weight: var(--amr--fontweight--4); */
     letter-spacing: 1px;
 }
 
@@ -913,9 +910,9 @@ body {
 
 .sec4__sec .__box:nth-child(2) .progrss__chart:nth-child(5) .__progress::after {
     content: '92%';
-}
+} */
 
-@keyframes progressAnimation {
+/* @keyframes progressAnimation {
     0% {
         width: 0;
     }
@@ -923,7 +920,7 @@ body {
     100% {
         width: var(--target-width);
     }
-}
+} */
 
 /* ======================================================================================= */
 

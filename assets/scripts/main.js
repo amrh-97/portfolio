@@ -191,23 +191,23 @@ activeSection(priceSec, priceLi);
 
 // Progress Bar Animation
 
-const progressBar = document.querySelectorAll('.__progress');
-const progressSkill = document.querySelector('.pro__skill');
+// const progressBar = document.querySelectorAll('.__progress');
+// const progressSkill = document.querySelector('.pro__skill');
 
 
-function progressAni() {
-    progressBar.forEach(pbar => {
-        setTimeout(() => {
-            const targetWidth = getComputedStyle(pbar).width;
-            pbar.style.setProperty('--target-width', targetWidth);
-            pbar.style.animation = "progressAnimation 0.6s ease";
-        }, 400);
-        setTimeout(() => {
-            pbar.style.animation = "none";
-        }, 1000);
-    })
-}
-progressSkill.addEventListener('click', progressAni);
+// function progressAni() {
+//     progressBar.forEach(pbar => {
+//         setTimeout(() => {
+//             const targetWidth = getComputedStyle(pbar).width;
+//             pbar.style.setProperty('--target-width', targetWidth);
+//             pbar.style.animation = "progressAnimation 0.6s ease";
+//         }, 400);
+//         setTimeout(() => {
+//             pbar.style.animation = "none";
+//         }, 1000);
+//     })
+// }
+// progressSkill.addEventListener('click', progressAni);
 
 // Section-5 list
 
