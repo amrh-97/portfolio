@@ -56,7 +56,7 @@ resNav.addEventListener('click', navHide);
 
 // Text Wrapper
 
-const textArray = ["a Digital Marketing Expert.", " an Amazon FBA Expert.", "a TikTok Shop Expert.", " an eBay E-commerce Expert.", " an Etsy SEO Consultant.", " a Walmart Marketplace Pro.", "your LLC,LTD Assistant."];
+const textArray = ["a Digital Marketing Expert.", " an Amazon FBA Expert.", "a TikTok Shop Expert.", " an eBay E-commerce Expert.", " an Etsy SEO Consultant.", " a Walmart Marketplace Pro."];
 
 let textArrayIndex = 0;
 let charIndex = 0;
