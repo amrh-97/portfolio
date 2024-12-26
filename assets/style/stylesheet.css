@@ -670,6 +670,10 @@ body {
     justify-content: center;
 }
 
+.restxt__2 {
+    align-items: center;
+}
+
 .resume__boxes {
     min-height: 100px;
     display: flex;
@@ -1391,7 +1395,7 @@ body {
     width: 100px;
 }
 
-.slider1 .swiper-slide:nth-child(1n) {
+/* .slider1 .swiper-slide:nth-child(1n) {
     background-image: url(../img/sec6--img1.webp);
 }
 
@@ -1409,7 +1413,7 @@ body {
 
 .slider1 .swiper-slide:nth-child(5n) {
     background-image: url(../img/sec6--img18.webp);
-}
+} */
 
 
 .slider1 .swiper-slide img {
