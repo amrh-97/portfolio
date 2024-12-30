@@ -1395,6 +1395,11 @@ body {
     width: 100px;
 }
 
+.conference--vid {
+    width: 100%;
+    height: 420px;
+}
+
 /* .slider1 .swiper-slide:nth-child(1n) {
     background-image: url(../img/sec6--img1.webp);
 }
