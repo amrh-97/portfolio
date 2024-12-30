@@ -1478,6 +1478,7 @@ body {
     gap: 10px;
 }
 
+/* 
 .blog__type {
     color: var(--amr--color--2);
 }
@@ -1505,6 +1506,29 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--amr--global--gap);
+} */
+
+.blog__boxes {
+    position: relative;
+}
+
+.analytics__video {
+    width: 100%;
+    height: 400px;
+}
+
+.analytics__right__left-icon span i {
+    position: absolute;
+    top: 40%;
+    z-index: 11;
+}
+
+.analytics__left-arrow i {
+    left: 0;
+}
+
+.analytics__right-arrow i {
+    right: 0;
 }
 
 /* ======================================================================================= */
