@@ -1743,7 +1743,7 @@ body {
 
 
 /*  */
-section {
+.global--padding {
     padding: 60px 0;
 }
 
@@ -1756,8 +1756,4 @@ section {
 .blog {
     display: grid;
     gap: 30px;
-}
-
-.shadow-host-companion {
-    display: none;
 }
