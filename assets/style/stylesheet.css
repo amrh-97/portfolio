@@ -222,10 +222,10 @@ body {
 }
 
 .sec1__content {
-    height: 600px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 580px;
 }
 
 .sec1__txt {
@@ -1366,8 +1366,14 @@ body {
     width: 50%;
 }
 
-.event__ides span {
+.enevt__subheading {
     font-family: var(--amr--fontfamily--2);
+    font-weight: var(--amr--fontweight--2);
+}
+
+.event__details {
+    font-family: var(--amr--fontfamily--2);
+    font-weight: var(--amr--fontweight--4);
 }
 
 .price__inner h3 {
@@ -1718,53 +1724,21 @@ body {
     position: relative;
 }
 
-.feature__boxes .fbox__content h4::after {
+.fbox__icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fbox__type {
     color: var(--amr--color--1);
     background: var(--amr--color--2);
     font-size: 14px;
     font-family: var(--amr--fontfamily--1);
-    position: absolute;
-    top: -30px;
-    right: 0;
     display: grid;
     place-items: center;
     padding: 4px 10px;
     border-radius: var(--amr--borderradius-2);
-}
-
-.fbox__content:hover.fbox__content h4::after {
-    color: var(--amr--color--2);
-    background: var(--amr--color--1);
-}
-
-.feature__boxes .fbox__content:nth-child(1) h4::after {
-    content: "Services";
-}
-
-.feature__boxes .fbox__content:nth-child(2) h4::after,
-.feature__boxes .fbox__content:nth-child(3) h4::after,
-.feature__boxes .fbox__content:nth-child(6) h4::after {
-    content: "Management";
-}
-
-.feature__boxes .fbox__content:nth-child(4) h4::after {
-    content: "Optimization";
-}
-
-.feature__boxes .fbox__content:nth-child(5) h4::after {
-    content: "Dropshipping";
-}
-
-.feature__boxes .fbox__content:nth-child(7) h4::after {
-    content: "On/Off & Technical SEO";
-}
-
-.feature__boxes .fbox__content:nth-child(8) h4::after {
-    content: "Assistance";
-}
-
-.feature__boxes .fbox__content:nth-child(9) h4::after {
-    content: "Development";
 }
 
 
@@ -1782,4 +1756,8 @@ section {
 .blog {
     display: grid;
     gap: 30px;
+}
+
+.shadow-host-companion {
+    display: none;
 }
