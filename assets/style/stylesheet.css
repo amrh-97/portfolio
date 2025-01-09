@@ -411,7 +411,8 @@ body {
 #contact::before,
 #main__footer::before,
 #testimonial::before,
-#blog::before {
+#blog::before,
+.user__videos::before {
     content: '';
     width: 94%;
     height: 10px;
@@ -1518,6 +1519,16 @@ body {
     position: relative;
 }
 
+.analytics__video-heading {
+    color: var(--amr--color--2);
+    font-family: var(--amr--fontfamily--1);
+    font-weight: var(--amr--fontweight--3);
+    font-size: 22px;
+    line-height: 2;
+    display: block;
+    text-align: center;
+}
+
 .analytics__video {
     width: 100%;
     height: 400px;
@@ -1713,11 +1724,6 @@ body {
     border-bottom: 1px solid var(--amr--color--7);
 }
 
-.hidden {
-    display: none;
-}
-
-
 
 
 .feature__boxes .fbox__content h4 {
@@ -1741,6 +1747,30 @@ body {
     border-radius: var(--amr--borderradius-2);
 }
 
+.user__videos {
+    position: relative;
+}
+
+.user__videos-inner {
+    display: grid;
+    gap: var(--amr--global--gap);
+}
+
+.user__video-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user__video {
+    height: 700px;
+    position: relative;
+}
+
+.userVid__right__left-icon span i {
+    top: 50%;
+}
+
 
 /*  */
 .global--padding {
@@ -1756,4 +1786,9 @@ body {
 .blog {
     display: grid;
     gap: 30px;
+}
+
+
+.hidden {
+    display: none;
 }

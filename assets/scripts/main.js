@@ -13,6 +13,9 @@ const carousel = document.querySelector('.testmonial__inner');
 const testimoial = document.querySelectorAll('.testmonial__txt');
 const leftArrow = document.querySelector('.left__arrow i');
 const rightArrow = document.querySelector('.right__arrow i');
+const analyticsVideo = document.querySelectorAll('.analytics__video-inner');
+const analyticsLeftArrow = document.querySelector('.analytics__left-arrow');
+const analyticsRightArrow = document.querySelector('.analytics__right-arrow');
 
 //  Nav Active
 
@@ -317,7 +320,65 @@ function activeClients(section, secli) {
         })
     });
 };
-activeClients(clientSec, clientLi)
+activeClients(clientSec, clientLi);
+
+
+// Analytics Video
+const updateVidUi = (currentVideo, videoElements, leftArrow, rightArrow) => {
+    videoElements.forEach(vid => {
+        vid.classList.add('hidden');
+    });
+    videoElements[currentVideo].classList.remove('hidden');
+
+    if (currentVideo === 0) {
+        leftArrow.classList.add('hidden');
+    } else {
+        leftArrow.classList.remove('hidden');
+    }
+
+    if (currentVideo === videoElements.length - 1) {
+        rightArrow.classList.add('hidden');
+    } else {
+        rightArrow.classList.remove('hidden');
+    }
+}
+
+const createVideoController = (videoElements, leftArrow, rightArrow) => {
+    let currentVideo = 0;
+
+    // Initial UI update
+    updateVidUi(currentVideo, videoElements, leftArrow, rightArrow);
+
+    const nextVid = () => {
+        if (currentVideo < videoElements.length - 1) {
+            currentVideo++;
+            updateVidUi(currentVideo, videoElements, leftArrow, rightArrow);
+        }
+    }
+
+    const previousVid = () => {
+        if (currentVideo > 0) {
+            currentVideo--;
+            updateVidUi(currentVideo, videoElements, leftArrow, rightArrow);
+        }
+    }
+
+    rightArrow.addEventListener('click', nextVid);
+    leftArrow.addEventListener('click', previousVid);
+}
+
+// Assuming you have the following elements defined
+// const analyticsVideo = document.querySelectorAll('.analytics__video');
+// const analyticsLeftArrow = document.querySelector('.analytics__left-arrow');
+// const analyticsRightArrow = document.querySelector('.analytics__right-arrow');
+
+const userVideos = document.querySelectorAll('.user__video');
+const userVidLeftArrow = document.querySelector('.userVid__left-arrow');
+const userVidRightArrow = document.querySelector('.userVid__right-arrow');
+
+// Create controllers for both video sets
+createVideoController(analyticsVideo, analyticsLeftArrow, analyticsRightArrow);
+createVideoController(userVideos, userVidLeftArrow, userVidRightArrow);
 
 
 // Swiper Js

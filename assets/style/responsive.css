@@ -300,6 +300,11 @@
         height: 360px;
     }
 
+    .slider2 {
+        width: 500px !important;
+        height: 250px;
+    }
+
 
 
 
@@ -331,6 +336,20 @@
 
     .webbox__content {
         min-height: 540px;
+    }
+
+    .right__left span i {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    .analytics__right__left-icon span i {
+        top: 55%;
+    }
+
+    .sec6__prices {
+        min-width: 100%;
     }
 }
 
@@ -568,6 +587,20 @@
         font-size: 20px;
     }
 
+    .right__left span i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .analytics__right__left-icon span i {
+        top: 55%;
+    }
+
+    .user__video {
+        height: 500px;
+    }
+
 }
 
 /* ========================================== */
@@ -600,6 +633,20 @@
 
     .web__img {
         height: 150px;
+    }
+
+    .right__left span i {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .analytics__right__left-icon span i {
+        top: 55%;
+    }
+
+    .user__video {
+        height: 500px;
     }
 }
 
