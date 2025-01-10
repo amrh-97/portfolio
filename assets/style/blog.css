@@ -180,7 +180,7 @@ body {
     font-size: 30px;
 }
 
-.blog__info article {
+.blog__info article p {
     font-family: var(--amr--fontfamily--2);
     font-size: 18px;
 }
